@@ -1,0 +1,6 @@
+[package]
+name = "display_colors"
+version = "0.1.0"
+authors = ["Damien Stanton <damien.stanton@gmail.com>"]
+
+[dependencies]

@@ -1,0 +1,11 @@
+*.DS_Store
+env/
+bin/
+node_modules/
+.vscode/
+.idea/
+vendor/
+target/
+build/
+.gradle/
+**/*.rs.bk
