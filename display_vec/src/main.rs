@@ -1,4 +1,3 @@
-use std::fmt;
 /// ## Quick note on `?` vs `try!`
 /// The `?` syntax is the preferred method of indicating a "Result" return value
 /// Old Rust code might still use the `try!` syntax.
@@ -10,13 +9,14 @@ use std::fmt;
 /// ```
 /// try!(write!(f, "{}", value));
 /// ```
+use std::fmt;
 
 // List with a vector
 struct List(Vec<i32>);
 
 impl fmt::Display for List {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        let vec = &self.0; // neat indexing syntax
+        let vec = &self.0;
         write!(f, "[")?;
 
         for (i, v) in vec.iter().enumerate() {

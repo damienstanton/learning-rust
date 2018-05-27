@@ -11,11 +11,8 @@ impl Display for Color {
     fn fmt(&self, f: &mut Formatter) -> fmt::Result {
         write!(
             f,
-            "RGB ({}, {}, {}) 0x{:X}",
-            self.red,
-            self.green,
-            self.blue,
-            self.red // TODO: figure out how to concat the u8 struct type 🤔
+            "RGB ({}, {}, {}) 0x{:02X}{:02X}{:02X}",
+            self.red, self.green, self.blue, self.red, self.green, self.blue
         )
     }
 }
