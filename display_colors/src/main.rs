@@ -36,7 +36,6 @@ fn main() {
         },
     ].iter()
     {
-        // println!("{:?}", *color);
         println!("{}", *color);
     }
 }
