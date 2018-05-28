@@ -1,0 +1,4 @@
+[[package]]
+name = "static_lifetime"
+version = "0.1.0"
+
